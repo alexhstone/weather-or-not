@@ -1,8 +1,9 @@
-Weather or not is an app designed around a pun. 
+Weather or not is an app designed around a pun. My goal with this project is to take something a bit mundane (a very simple weather app) and see how interesting I can make it over time.  
 
-The current build of the app gives you the weather (in Minneapolis)... 
 
-and not the weather. 
+The current build of the app gives you the weather in a few cities.  
+
+and not the weather... in those cities. 
 
 This app utilizes the open-meteo weather API, for which, the documentation can be found here: 
 https://open-meteo.com/en/docs#api_form

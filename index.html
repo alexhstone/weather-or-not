@@ -8,14 +8,27 @@
     <title>Weather... or Not</title>
 </head>
 <body>
-    <h1>Welcome </h1>
+    <h1>Welcome</h1>
+
+    <div class="container">
+        <select name="cities" id="cities">
+            <option value="none">Select a City</option>
+            <option value="minneapolis">Minneapolis</option>
+            <option value="chicago">Chicago</option>
+            <option value="manhattan">Manhattan</option>
+            <option value="denver">Denver</option>
+            <option value="la">Los Angeles</option>
+            <option value="portland">Portland</option>
+        </select> 
+    </div>
+
 
     <div class="container">
     <p>The weather is...</p>
     <p class="display" id="weather">Loading...</p>
     <br>
     </div>
-
+      
     <div class="container">
     <p>And the weather is not...</p>
     <p class="display" id="not">Loading...</p>
