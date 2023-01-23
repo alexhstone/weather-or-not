@@ -10,12 +10,6 @@ const cities = document.querySelector("#cities");
 cities.addEventListener("change", chooseCity)
 
 
-
-
-//when we get the data, we run our function that... 
-//getWeather().then(data => updateWeather(data));
-
-
 //updates the values on the page with the weather... and a random "not" value.
 function updateWeather(data) {
     //create a random value for our "not"
@@ -34,7 +28,7 @@ function chooseCity(){
     if (cities.value == "minneapolis"){
         let lat = "44.98"
         let long = "-93.26"
-        getWeather(lat, long).then(data => updateWeather(data));     
+        getWeather(lat, long).then(data => updateWeather(data));   
     }
     else if (cities.value == "chicago"){
         let lat = "41.87"
@@ -65,12 +59,18 @@ function chooseCity(){
         cities.value = "none"
         return
     }
-
+    changeBackground(cities.value);
 }
 
-//call our API to get the current weather (just in Minneapolis, right now)
+//call our API to get the current weather
 async function getWeather(lat, long) {
     let response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&current_weather=true&temperature_unit=fahrenheit`)
     let data = await response.json()
     return data;
+}
+
+
+//little helper function for changing the background
+function changeBackground(city){
+    document.body.style.backgroundImage = `url(./backgrounds/${city}.jpg)`
 }

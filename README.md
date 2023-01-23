@@ -8,5 +8,8 @@ and not the weather... in those cities.
 This app utilizes the open-meteo weather API, for which, the documentation can be found here: 
 https://open-meteo.com/en/docs#api_form
 
+Stock Photos were obtained from Pexels and Unsplash
+
+
 I'll be adding a bit more functionality (and silliness) to this app as time goes on
 I just thought it'd be nice to have a bit of javascript on my github page in the meantime :) 
